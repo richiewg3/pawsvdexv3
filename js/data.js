@@ -11,10 +11,24 @@ export const CREATURES = [
     rarity: 3,
     img: 'https://via.placeholder.com/150/16d5ff/050510?text=Glowtail',
     stages: [
-      { name: 'Juvenile Glowtail', type: 'image', src: 'https://via.placeholder.com/350/16d5ff/050510?text=Stage+1' },
-      { name: 'Mystic Glowtail',   type: 'image', src: 'https://via.placeholder.com/350/d451ff/050510?text=Stage+2' }
+      {
+        name: 'Juvenile Glowtail',
+        imgSrc: 'assets/img/stage1_glowtail.png',
+        modelSrc: 'assets/models/stage1_glowtail.glb'
+      },
+      {
+        name: 'Mystic Glowtail',
+        imgSrc: 'assets/img/stage2_glowtail.png',
+        modelSrc: 'assets/models/stage2_glowtail.glb'
+      }
     ],
-    media: { type: 'video', src: 'assets/img/glowtail-loop.mp4' },
+    media: {
+      video: 'assets/media/glowtail_loop.mp4',
+      candids: [
+        'assets/media/glowtail_candid_1.jpg',
+        'assets/media/glowtail_candid_2.jpg'
+      ]
+    },
     role: 'Guides lost travellers',
     behaviour: 'Curious, nimble',
     notable: 'Royal Playroom Fire Chase'
@@ -27,10 +41,24 @@ export const CREATURES = [
     rarity: 2,
     img: 'https://via.placeholder.com/150/3dff83/050510?text=Budblop',
     stages: [
-      { name: 'Sproutling', type: 'image', src: 'https://via.placeholder.com/350/3dff83/050510?text=Stage+1' },
-      { name: 'Bloomblop', type: 'image', src: 'https://via.placeholder.com/350/d451ff/050510?text=Stage+2' }
+      {
+        name: 'Sproutling',
+        imgSrc: 'assets/img/stage1_budblop.png',
+        modelSrc: 'assets/models/stage1_budblop.glb'
+      },
+      {
+        name: 'Bloomblop',
+        imgSrc: 'assets/img/stage2_budblop.png',
+        modelSrc: 'assets/models/stage2_budblop.glb'
+      }
     ],
-    media: null,
+    media: {
+      video: 'assets/media/budblop_loop.mp4',
+      candids: [
+        'assets/media/budblop_candid_1.jpg',
+        'assets/media/budblop_candid_2.jpg'
+      ]
+    },
     role: 'Absorbs moonlight to grow',
     behaviour: 'Shy, gentle',
     notable: 'First bloom during the Great Eclipse'
@@ -43,10 +71,24 @@ export const CREATURES = [
     rarity: 4,
     img: 'https://via.placeholder.com/150/ff6666/050510?text=Scorchbit',
     stages: [
-      { name: 'Emberling', type: 'image', src: 'https://via.placeholder.com/350/ff6666/050510?text=Stage+1' },
-      { name: 'Inferno Whelp', type: 'image', src: 'https://via.placeholder.com/350/d451ff/050510?text=Stage+2' }
+      {
+        name: 'Emberling',
+        imgSrc: 'assets/img/stage1_scorchbit.png',
+        modelSrc: 'assets/models/stage1_scorchbit.glb'
+      },
+      {
+        name: 'Inferno Whelp',
+        imgSrc: 'assets/img/stage2_scorchbit.png',
+        modelSrc: 'assets/models/stage2_scorchbit.glb'
+      }
     ],
-    media: null,
+    media: {
+      video: 'assets/media/scorchbit_loop.mp4',
+      candids: [
+        'assets/media/scorchbit_candid_1.jpg',
+        'assets/media/scorchbit_candid_2.jpg'
+      ]
+    },
     role: 'Guardian of forgotten embers',
     behaviour: 'Playful, territorial',
     notable: 'Lit the ceremonial bonfire'
