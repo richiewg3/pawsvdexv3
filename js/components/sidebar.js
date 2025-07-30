@@ -20,7 +20,6 @@ export function initSidebar(router) {
       const btn = h('div', { className: 'sidebar-btn', dataset: { page: b.page }, title: b.label });
       const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
       svg.setAttribute('viewBox', '0 0 24 24');
-      svg.setAttribute('aria-hidden', 'true');
       const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       path.setAttribute('d', b.path);
       path.setAttribute('fill', 'none');
