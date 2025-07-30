@@ -290,6 +290,7 @@ section::-webkit-scrollbar-thumb {
   font-size: 18px;
   color: var(--neon-green);
 }
+
 .ai button, .ai input {
   font-family: var(--font-head);
   border-radius: 8px;
@@ -302,6 +303,21 @@ section::-webkit-scrollbar-thumb {
 .ai button:disabled, .ai input:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+/* ---------- PANEL STYLES ---------- */
+.content-panel {
+  background: rgba(11, 11, 24, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px 32px;
+  margin-top: 32px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.content-panel .subhead {
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 /* ---------- DETAIL PAGE LAYOUT ---------- */

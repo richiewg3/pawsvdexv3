@@ -10,9 +10,7 @@ export function createFilterPanel() {
   const createChipGroup = (title, options, onToggle) => {
     return h('div', { className: 'chip-group' },
       h('h3', { className: 'chip-group-title' }, title),
-      ...options.map(option =>
-        h('button', { className: 'chip', onClick: () => onToggle(option) }, option)
-      )
+      ...options.map(option => h('button', { className: 'chip', onClick: () => onToggle(option) }, option))
     );
   };
 
@@ -36,4 +34,3 @@ export function createFilterPanel() {
 
   return { el: panel, destroy: unsubscribe };
 }
-
